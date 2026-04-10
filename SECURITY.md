@@ -30,4 +30,4 @@ If you have a deadline for public disclosure, please let us know. Our vulnerabil
 within 3 working days of your report. This project aims to resolve all vulnerabilities within 90 days.
 
 The [Ubuntu Security disclosure and embargo policy](https://ubuntu.com/security/disclosure-policy) contains more
-information about how can contact us, what you can expect when you contact us, and what we expect from you.
+information about how you can contact us, what you can expect when you contact us, and what we expect from you.
