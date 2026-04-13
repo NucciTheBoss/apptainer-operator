@@ -18,8 +18,9 @@
 import logging
 
 import ops
-from hpc_libs.interfaces import OCIRuntimeData, OCIRuntimeProvider, SlurmctldConnectedEvent
-from hpc_libs.utils import StopCharm, leader, refresh
+from charmed_hpc_libs.ops import StopCharm, leader, refresh
+from charmed_slurm_oci_runtime_interface import OCIRuntimeData, OCIRuntimeProvider
+from charmed_slurm_slurmctld_interface import SlurmctldConnectedEvent
 from slurmutils import OCIConfig
 
 import apptainer
@@ -35,7 +36,7 @@ def _apptainer_status_check(_: ops.CharmBase) -> ops.StatusBase:
 
 
 logger = logging.getLogger(__name__)
-refresh = refresh(check=_apptainer_status_check)
+refresh = refresh(hook=_apptainer_status_check)
 
 
 class ApptainerCharm(ops.CharmBase):

@@ -14,7 +14,7 @@
 
 """Constants used within the Apptainer charmed operator."""
 
-from hpc_libs.is_container import is_container
+from charmed_hpc_libs.ops import is_container
 
 OCI_RUNTIME_INTEGRATION_NAME = "oci-runtime"
 

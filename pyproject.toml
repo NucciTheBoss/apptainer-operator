@@ -3,17 +3,19 @@ name = "apptainer"
 version = "0.0"
 requires-python = ">=3.12"
 dependencies = [
-    "ops ~= 2.22",
+    "ops ~= 3.0",
     "distro ~= 1.9",
-    "hpc-libs",
-    "slurmutils <2.0.0,>=1.1.0"
+    "charmed-hpc-libs ~= 0.1",
+    "charmed-slurm-oci-runtime-interface ~= 0.1",
+    "charmed-slurm-slurmctld-interface ~= 0.1",
+    "slurmutils < 2.0, >= 1.0"
 ]
 
 [project.optional-dependencies]
 dev = [
     # Testing
     "coverage[toml] ~= 7.8",
-    "ops[testing] ~= 2.22",
+    "ops[testing] ~= 3.0",
     "pytest~=9.0",
     "pytest-mock ~= 3.14",
     "pytest-order ~= 1.3",
