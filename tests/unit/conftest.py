@@ -49,7 +49,7 @@ def mock_ociconfig() -> OCIConfig:
 
 @pytest.fixture(scope="function")
 def mock_is_container(request, mocker: MockerFixture) -> None:
-    mocker.patch("hpc_libs.is_container.is_container", request.param)
+    mocker.patch("charmed_hpc_libs.ops.is_container", request.param)
 
     # The `apptainer` and `constants` modules must be reloaded because the value of
     # `APPTAINER_PACKAGES` constant is calculated when the unit tests are collected by

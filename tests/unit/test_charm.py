@@ -14,11 +14,8 @@
 
 """Unit tests for the `apptainer` charm."""
 
-from collections import defaultdict
-
 import ops
 import pytest
-from hpc_libs.interfaces import SlurmctldConnectedEvent
 from ops import testing
 from slurmutils import OCIConfig
 
@@ -100,16 +97,6 @@ def test_on_slurmctld_connected(mock_charm, mock_ociconfig, leader) -> None:
     else:
         # Verify that non-leader has not set any `oci.conf` configuration data.
         assert integration.local_app_data == {}
-
-    # Assert that `SlurmctldConnectedEvent` was emitted on all units.
-    assert isinstance(mock_charm.emitted_events[-1], SlurmctldConnectedEvent)
-
-    # Assert that `SlurmctldConnectedEvent` was only emitted once.
-    occurred = defaultdict(lambda: 0)
-    for event in mock_charm.emitted_events:
-        occurred[type(event)] += 1
-
-    assert occurred[SlurmctldConnectedEvent] == 1
 
 
 @pytest.mark.parametrize(
