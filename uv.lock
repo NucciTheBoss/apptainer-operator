@@ -10,6 +10,7 @@ dependencies = [
     { name = "charmed-hpc-libs" },
     { name = "charmed-slurm-oci-runtime-interface" },
     { name = "charmed-slurm-slurmctld-interface" },
+    { name = "charmlibs-apt" },
     { name = "distro" },
     { name = "ops" },
     { name = "slurmutils" },
@@ -34,6 +35,7 @@ requires-dist = [
     { name = "charmed-hpc-libs", specifier = "~=0.1" },
     { name = "charmed-slurm-oci-runtime-interface", specifier = "~=0.1" },
     { name = "charmed-slurm-slurmctld-interface", specifier = "~=0.1" },
+    { name = "charmlibs-apt", specifier = "~=1.0" },
     { name = "codespell", marker = "extra == 'dev'" },
     { name = "coverage", extras = ["toml"], marker = "extra == 'dev'", specifier = "~=7.8" },
     { name = "distro", specifier = "~=1.9" },
@@ -104,6 +106,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/36/ce/23c496b7b54596444a842764b7cd16f3bc2a73eb0fe2db2198961a5d4f1e/charmed_slurm_slurmctld_interface-0.1.0.tar.gz", hash = "sha256:c1d215c410eeac5fa2859f0a7f76aa59806ef951a3fbe03c892b5b8cabb0c8d7", size = 11318, upload-time = "2026-04-10T20:53:42.509Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/83/a0/32c3ea40ad6c1b5237750e4268a310f67d4b0a425e23fec0c870af29ef5c/charmed_slurm_slurmctld_interface-0.1.0-py3-none-any.whl", hash = "sha256:1d9d35b9e04938311d932e1f4c3446f1dd890deb2c0ea761251e0d38f5f819c3", size = 12772, upload-time = "2026-04-10T20:53:41.372Z" },
+]
+
+[[package]]
+name = "charmlibs-apt"
+version = "1.0.0.post0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "opentelemetry-api" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fd/58/33e87779fdbcf62a3b34e3444d7175c1168b4b2726cc29c98849c09ac086/charmlibs_apt-1.0.0.post0.tar.gz", hash = "sha256:9c2e0b3c1f553ebcaae99c9aad72e15383aec56677a8dd3f6479dc6f084189a6", size = 31942, upload-time = "2025-10-15T02:40:29.521Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dd/92/4db19cd8bc94db51a115f7a2e3c46d96b991ca7ebe27207beac9a6570bc6/charmlibs_apt-1.0.0.post0-py3-none-any.whl", hash = "sha256:958e84719eb1feff539f058dc6c7af648c53c88b9ebe7c6157ec8d2bdf5fbfc6", size = 19287, upload-time = "2025-10-15T02:40:27.756Z" },
 ]
 
 [[package]]

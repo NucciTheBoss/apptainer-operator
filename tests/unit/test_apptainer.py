@@ -1,4 +1,4 @@
-# Copyright 2025 Canonical Ltd.
+# Copyright 2025-2026 Canonical Ltd.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 import subprocess
 
-import charms.operator_libs_linux.v0.apt as apt
+import charmlibs.apt as apt
 import pytest
 from pytest_mock import MockerFixture
 

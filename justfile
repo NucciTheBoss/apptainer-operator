@@ -1,5 +1,5 @@
 #!/usr/bin/env just --justfile
-# Copyright 2025 Canonical Ltd.
+# Copyright 2025-2026 Canonical Ltd.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ tests_dir := project_dir / "tests"
 
 export PY_COLORS := "1"
 export PYTHONBREAKPOINT := "pdb.set_trace"
-export PYTHONPATH := project_dir / "src" + ":" + project_dir / "lib"
+export PYTHONPATH := project_dir / "src"
 
 uv_run := "uv run --frozen --extra dev"
 
