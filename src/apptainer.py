@@ -1,4 +1,4 @@
-# Copyright 2025 Vantage Compute Corporation
+# Copyright 2025-2026 Vantage Compute Corporation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ import shutil
 import subprocess
 from string import Template
 
-import charms.operator_libs_linux.v0.apt as apt
+import charmlibs.apt as apt
 import distro
 
 from constants import APPTAINER_PACKAGES, APPTAINER_PPA_KEY, APPTAINER_PPA_URL
