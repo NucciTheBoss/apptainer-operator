@@ -28,9 +28,6 @@ dev = [
     "pyright",
 ]
 
-[tool.uv.sources]
-hpc-libs = { git = "https://github.com/charmed-hpc/hpc-libs", rev = "32bf1b6e2c23654cd8a7f7321fb6130a56b2fc4e" }
-
 # Testing tools configuration
 [tool.coverage.run]
 branch = true
